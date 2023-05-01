@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Enter Registration Number</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static', filename='css/styles.css') }}"
+    />
+  </head>
+  <body>
+    <h1>Enter Registration Number</h1>
+    <form method="POST" action="/submit_registration_number">
+      <label for="registration_number">Registration Number:</label>
+      <input
+        type="text"
+        name="registration_number"
+        id="registration_number"
+        required
+      />
+      <br />
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
